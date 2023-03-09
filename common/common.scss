@@ -1,0 +1,24 @@
+.header-toggle-button {
+  // Should be sync with the file below:
+  // https://github.com/discourse/discourse-color-scheme-toggle/blob/main/common/common.scss
+  .btn {
+    padding: 0;
+  }
+}
+.sidebar-user-field-toggle {
+  .d-button-label {
+    color: var(--primary-medium);
+  }
+}
+.sidebar-user-field-toggle-button * {
+  color: var(--primary-medium);
+}
+.btn.emphasized {
+  background-color: var(--primary-low) !important;
+  * {
+    color: var(--primary-high) !important;
+  }
+  &:hover {
+    background-color: var(--primary-low-mid) !important;
+  }
+}

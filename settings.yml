@@ -1,0 +1,35 @@
+user_field_settings:
+  default: >-
+    [
+      { "name_or_id": "NSFW", "label": "", "title": "", "svg_enabled": "toggle-on", "svg_disabled": "toggle-off", "emphasize": "enabled" }
+    ]
+  json_schema: |
+    {
+      "type": "array",
+      "format": "table",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name_or_id": { "type": "string" },
+          "label": { "type": "string" },
+          "title": { "type": "string" },
+          "svg_enabled": {"type": "string", "default": "toggle-on"},
+          "svg_disabled": {"type": "string", "default": "toggle-off"},
+          "emphasize": {"type": "string", "default": "enabled"}
+        }
+      }
+    }
+  description:
+    en: |
+      Configure user_fields to display in sidebar.
+      `label` and `title` can be empty.
+      `emphasize` can be "enabled","disabled","both" or ""(none). It emphasizes the status.
+    zh_CN: |
+      设置侧边栏可以编辑的用户字段。
+      `label` 和 `title` 可以置空.
+      `emphasize` 可以是 "enabled","disabled","both" 或者 ""（空）. 用于强调按钮所处的状态。
+svg_icons: 
+  default: ""
+  type: "list"
+  list_type: "compact"
+  description: "填写主题组件要用到的 FontAwesome 5 icons 列表"
