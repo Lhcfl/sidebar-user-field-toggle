@@ -32,4 +32,6 @@ svg_icons:
   default: ""
   type: "list"
   list_type: "compact"
-  description: "填写主题组件要用到的 FontAwesome 5 icons 列表"
+  description:
+    en: "List of FontAwesome 5 icons this theme component used" 
+    zh_CN: "填写主题组件要用到的 FontAwesome 5 icons 列表"
